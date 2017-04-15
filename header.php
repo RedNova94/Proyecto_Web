@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title><?= isset($PageTitle) ? $PageTitle : "Default Title"?></title>
+    <!-- Additional tags here -->
     <link rel="stylesheet" href="tabs25.css">
+    <?php if (function_exists('customPageHeader')){
+        customPageHeader();
+    }?>
 </head>
 <body>
 <div id="tabs25">
@@ -16,16 +19,11 @@
         </li>
         <li>
             <a href='#peliculas' title='Peliculas'>
-                <span>Películas</span>
+                <span>Catálogo</span>
             </a>
         </li>
         <li>
-        <a href='#videojuegos' title='Videojuegos'>
-            <span>Videojuegos</span>
-        </a>
-        </li>
-        <li>
-            <a href='http://' title='Iniciar Sesion'>
+            <a href='sign_in.php' title='Iniciar Sesion'>
                 <span>Iniciar Sesión</span>
             </a>
         </li>
@@ -33,6 +31,3 @@
 
 
 </div>
-lorem ipsum dolor sit amet, consectretur wadipiscing elit.
-</body>
-</html>

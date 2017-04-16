@@ -15,7 +15,7 @@ include_once('header.php');
     <div class="logo"><i>Sign In<i></i></div>
     <!-- Main Form -->
     <div class="login-form-1">
-        <form id="login-form" class="text-left" method="post">
+        <form id="login-form" action="validate_user.php" class="text-left" method="post">
             <div class="login-form-main-message"></div>
             <div class="main-login-form">
                 <div class="login-group">

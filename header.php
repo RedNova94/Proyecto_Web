@@ -18,13 +18,18 @@
 <div id="tabs25">
     <ul>
         <li>
-        <a href='index.php' title='Home' class='current'>
+        <a href='index.php' title='Home'>
             <span>Home</span>
         </a>
         </li>
         <li>
             <a href='#peliculas' title='Peliculas'>
                 <span>Catálogo</span>
+            </a>
+        </li>
+        <li>
+            <a href='#miembros' title='Miembros'>
+                <span>Miembros</span>
             </a>
         </li>
         <li>

@@ -1,7 +1,7 @@
 /* ---------------------- Blueslate nav ---------------------- */
 html,
 body {
-    background: #efefef;
+    background: #2e2e2e;
     padding: 55px;
     padding-top: 0px;
     font-family: 'Varela Round';
@@ -33,7 +33,7 @@ body {
 #tabs25 ul li a {
     display: block;
     float: left;
-    color: #D5F1FF;
+    color: #e6e6e6;
     text-decoration: none;
     padding: 14px 22px 0 22px;
     height: 28px;
@@ -48,7 +48,7 @@ body {
 
 
 .box {
-    background:#fff;
+    background:#e6e6e6;
     transition:all 0.2s ease;
     border:2px dashed #dadada;
     margin-top: 10px;
@@ -60,7 +60,7 @@ body {
 }
 
 .box:hover {
-    border:2px solid #525C7A;
+    border:2px solid #ffffff;
 }
 
 .box span.box-title {

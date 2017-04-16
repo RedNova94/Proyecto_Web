@@ -16,8 +16,8 @@
         die("Fallo: " . mysqli_connect_error());
     }
 
-    $username = $_REQUEST['lg_username'];
-    $password = $_REQUEST['lg_password'];
+    $username = $_POST['lg_username'];
+    $password = $_POST['lg_password'];
 
     $sql_query = "SELECT username, password FROM users WHERE username ='" . $username. "' 
                 AND password ='" . $password . "'";

@@ -4,7 +4,7 @@ $PageTitle="Iniciar Sesión";
 
 function customPageHeader(){?>
     <!--Arbitrary HTML Tags-->
-    <link rel="stylesheet" href="css/style_sign.css">
+    <link rel="stylesheet" href="./css/style_sign.css">
 <?php }
 
 include_once('header.php');
@@ -15,26 +15,21 @@ include_once('header.php');
     <div class="logo"><i>Sign In<i></i></div>
     <!-- Main Form -->
     <div class="login-form-1">
-        <form id="login-form" action="validate_user.php" class="text-left" method="post">
-            <div class="login-form-main-message"></div>
+        <form id="login-form" action="validate_user.php" class="text-left" method="get">
             <div class="main-login-form">
                 <div class="login-group">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
+                        <input type="text" class="form-control" name="lg_username" placeholder="username">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+                        <input type="password" class="form-control" name="lg_password" placeholder="password">
                     </div>
-                    <!--<div class="form-group login-group-checkbox">
-                        <input type="checkbox" id="lg_remember" name="lg_remember">
-                        <label for="lg_remember">remember</label>
-                    </div> -->
                 </div>
                 <div><p></p></div>
-                <button type="submit" ><i>Login</i> </button>
+                <button type="submit">
             </div>
             <div class="etc-login-form">
-                <p>new user? <a href="sign_up.php">create new account</a></p>
+                <p>¿No tienes cuenta? <a href="sign_up.php">Regístrate</a></p>
             </div>
         </form>
     </div>

@@ -16,7 +16,7 @@ include_once('header.php');
                 <div class="logo"><i>Sign Up</i></div>
                 <!-- Main Form -->
                 <div class="login-form-1">
-                    <form id="register-form" class="text-left" method="post">
+                    <form id="register-form" action="register_user.php" class="text-left" method="post">
                         <div class="login-form-main-message"></div>
                         <div class="main-login-form">
                             <div class="login-group">
@@ -37,7 +37,7 @@ include_once('header.php');
                             <div><p></p></div>
                             <button type="submit"><i> Register</i></button>
                             <div class="etc-login-form">
-                                <p><i>already have an account? <a href="sign_in.php">Sign In here</a></i></p>
+                                <p><i>¿Ya tienes una cuenta? <a href="sign_in.php">Iniciar Sesión</a></i></p>
                             </div>
                         </div>
                     </form>

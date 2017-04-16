@@ -9,25 +9,29 @@
 $servidor = "localhost";
 $usuario = "root";
 $contrasena = "";
-$basedatos = "ShadowPlay";
+$basedatos = "shadowplay";
 
 
-if($_REQUEST['reg_username']=="" || $_REQUEST['reg_password']== "" || $_REQUEST['reg_password_confirm']== "") {
+if($_REQUEST['reg_username']=="" || $_REQUEST['reg_password']== "" || $_REQUEST['reg_password_confirm']== "" || $_REQUEST['reg_email']=="") {
 
     echo "<script>
     alert('Por favor llena todos los campos');
-    window.location.href='nuevo.php';
+    window.location.href='sign_up.php';
     </script>";
 }
-else if($_REQUEST['contrasena'] != $_REQUEST['contrasena2']) {
+else if($_REQUEST['reg_password'] != $_REQUEST['reg_password_confirm']) {
     echo "<script>
         alert('Las contraseñas no coinciden');
-        window.location.href='nuevo.php';
+        window.location.href='sign_up.php';
         </script>";
 } else {
-    $sentenciaSQL = "INSERT INTO usuarios (usuario, contrasena, nombre) VALUES ('" . $_REQUEST["usuario"] . "', '"
-        . $_REQUEST["contrasena"] . "', '" . $_REQUEST["nombre"] . "')";
+    $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
+    $sql_query = "INSERT INTO users (username, password, email) VALUES ('" . $_REQUEST["reg_username"] . "', '"
+        . $_REQUEST["reg_password"] . "', '" . $_REQUEST["reg_email"] . "')";
 
-    header("location: header.php");
+    mysqli_query($conexion, $sql_query);
+    mysqli_close($conexion);
+
+    header("location: index.php");
 }
 ?>

@@ -15,7 +15,7 @@ body {
     height: 42px;
     font-size: 11px;
     font-weight: bold;
-    background: #;
+    background: #0a0a0a;
     font-family: Arial, Verdana, Helvitica, sans-serif;
     text-transform: uppercase;
 }
@@ -41,7 +41,6 @@ body {
 #tabs25 ul li a:hover,
 #tabs25 ul li a.current {
     color: #fff;
-    background: transparent url(Proyecto_Web.git/images/blueslate_backgroundOVER.gif) no-repeat top center;
 }
 /* ---------------------- END Blueslate nav ---------------------- */
 

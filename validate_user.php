@@ -26,13 +26,13 @@
     mysqli_close($conexion);
 
     if (mysqli_num_rows($resultado) > 0) {
-        echo "<script> window.location.href='header.php'; </script>";
+        echo "<script> window.location.href='index.php'; </script>";
     } else {
         echo "<script>
-    alert('Usuario o Contraseña incorrectos');
-    //window.location.href='sign_in.php';
-    </script>";
-}
+        alert('Usuario o Contraseña incorrectos');
+        window.location.href='sign_in.php';
+        </script>";
+    }
 
 
 ?>

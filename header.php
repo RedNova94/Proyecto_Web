@@ -18,7 +18,7 @@
 <div id="tabs25">
     <ul>
         <li>
-        <a href='#link1' title='Home' class='current'>
+        <a href='index.php' title='Home' class='current'>
             <span>Home</span>
         </a>
         </li>

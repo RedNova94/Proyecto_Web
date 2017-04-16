@@ -26,7 +26,7 @@ include_once('header.php');
                     </div>
                 </div>
                 <div><p></p></div>
-                <button type="submit">
+                <button type="submit"><i>Login</i></button>
             </div>
             <div class="etc-login-form">
                 <p>¿No tienes cuenta? <a href="sign_up.php">Regístrate</a></p>

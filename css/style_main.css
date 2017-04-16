@@ -1,7 +1,10 @@
 /* ---------------------- Blueslate nav ---------------------- */
-body{
+html,
+body {
+    background: #efefef;
+    padding: 55px;
+    padding-top: 0px;
     font-family: 'Varela Round';
-
 }
 
 
@@ -12,7 +15,7 @@ body{
     height: 42px;
     font-size: 11px;
     font-weight: bold;
-    background: #3a7999;
+    background: #;
     font-family: Arial, Verdana, Helvitica, sans-serif;
     text-transform: uppercase;
 }
@@ -41,3 +44,40 @@ body{
     background: transparent url(Proyecto_Web.git/images/blueslate_backgroundOVER.gif) no-repeat top center;
 }
 /* ---------------------- END Blueslate nav ---------------------- */
+
+/* Style Index */
+
+
+.box {
+    background:#fff;
+    transition:all 0.2s ease;
+    border:2px dashed #dadada;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-clip: padding-box;
+    padding:0 20px 20px 20px;
+    min-height:340px;
+}
+
+.box:hover {
+    border:2px solid #525C7A;
+}
+
+.box span.box-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.box .box-content {
+    padding: 16px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+.box .box-content p {
+    color:#515c66;
+    text-transform:none;
+}

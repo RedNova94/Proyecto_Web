@@ -6,29 +6,33 @@
  * Time: 6:34 PM
  */
 
-$servidor = "localhost";
-$usuario = "root";
-$contrasena = "";
-$basedatos = "shadowplay";
+    $servidor = "localhost";
+    $usuario = "root";
+    $contrasena = "";
+    $basedatos = "ShadowPlay";
 
-$conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
-if (!$conexion) {
-    die("Fallo: " . mysqli_connect_error());
-}
+    $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
+    if (!$conexion) {
+        die("Fallo: " . mysqli_connect_error());
+    }
 
-$sql_query = "SELECT username, password FROM users WHERE username ='" . $_REQUEST["lg_username"] . "' 
-                AND password ='" . $_REQUEST["lg_password"] . "'";
+    $username = $_REQUEST['lg_username'];
+    $password = $_REQUEST['lg_password'];
 
-$resultado = mysqli_query($conexion, $sql_query);
-mysqli_close($conexion);
+    $sql_query = "SELECT username, password FROM users WHERE username ='" . $username. "' 
+                AND password ='" . $password . "'";
 
-if (mysqli_num_rows($resultado) > 0) {
-    header("location: index.php");
-} else {
-    echo "<script>
+    $resultado = mysqli_query($conexion, $sql_query);
+    mysqli_close($conexion);
+
+    if (mysqli_num_rows($resultado) > 0) {
+        echo "<script> window.location.href='header.php'; </script>";
+    } else {
+        echo "<script>
     alert('Usuario o Contraseña incorrectos');
-    window.location.href='sign_in.php';
+    //window.location.href='sign_in.php';
     </script>";
 }
+
 
 ?>

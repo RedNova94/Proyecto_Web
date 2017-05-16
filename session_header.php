@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="css/style_main.css">
     <script src="js/functions.js"></script>
 
+
 </head>
 <body>
 <div id="tabs25">
     <ul>
         <li>
-        <a href='index.php' title='Home'>
-            <span>Home</span>
-        </a>
+            <a href='index.php' title='Home'>
+                <span>Home</span>
+            </a>
         </li>
         <li>
             <a href='#peliculas' title='Peliculas'>
@@ -34,8 +35,13 @@
             </a>
         </li>
         <li>
-            <a href='sign_in.php' title='Iniciar Sesion'>
-                <span>Iniciar Sesión</span>
+            <a href='#perfil' title= 'Usuario'>
+                <span> <?php echo $_COOKIE["shadowplay_username"] ?> </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span onclick="endSession()">Cerrar Sesión</span>
             </a>
         </li>
     </ul>

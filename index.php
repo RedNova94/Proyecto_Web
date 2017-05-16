@@ -2,13 +2,16 @@
 
 $PageTitle="Página Principal";
 
-function customPageHeader(){?>
-    <!--Arbitrary HTML Tags-->
+/*function customPageHeader(){
 
-<?php }
-
-include_once('header.php');
+}*/
+if ($_COOKIE["shadowplay_username"] == "") {
+    include_once ("header.php");
+} else {
+    include_once ("session_header.php");
+}
 ?>
+
 <div class="box">
     <div class="box-content">
         <h1 class="tag-title">Heading</h1>

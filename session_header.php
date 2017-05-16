@@ -25,7 +25,7 @@
             </a>
         </li>
         <li>
-            <a href='#peliculas' title='Peliculas'>
+            <a href='#discos' title='Catálogo'>
                 <span>Catálogo</span>
             </a>
         </li>
@@ -35,13 +35,13 @@
             </a>
         </li>
         <li>
-            <a href='#perfil' title= 'Usuario'>
+            <a href='user_profile.php' title= 'Usuario'>
                 <span> <?php echo $_COOKIE["shadowplay_username"] ?> </span>
             </a>
         </li>
         <li>
-            <a>
-                <span onclick="endSession()">Cerrar Sesión</span>
+            <a href="end_session.php" title = 'Cerrar Sesión'>
+                <span>Cerrar Sesión</span>
             </a>
         </li>
     </ul>

@@ -26,6 +26,8 @@
     mysqli_close($conexion);
 
     if (mysqli_num_rows($resultado) > 0) {
+        setcookie("shadowplay_username", $username, time() + (86400 * 30));
+        setcookie("shadowplay_password", $password, time() + (86400 * 30));
         echo "<script> window.location.href='index.php'; </script>";
     } else {
         echo "<script>

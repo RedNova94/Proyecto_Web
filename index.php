@@ -2,14 +2,16 @@
 
 $PageTitle="Página Principal";
 
-/*function customPageHeader(){
-
-}*/
-if ($_COOKIE["shadowplay_username"] == "") {
-    include_once ("header.php");
+if(count($_COOKIE) > 0){
+    if ($_COOKIE["shadowplay_username"] == "") {
+        include_once ("header.php");
+    } else {
+        include_once ("session_header.php");
+    }
 } else {
-    include_once ("session_header.php");
+    include_once ("header.php");
 }
+
 ?>
 
 <div class="box">

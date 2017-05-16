@@ -6,12 +6,6 @@
  * Time: 7:45 PM
  */
 
-$servidor = "localhost";
-$usuario = "root";
-$contrasena = "";
-$basedatos = "shadowplay";
-
-
 if($_POST['reg_username']=="" || $_POST['reg_password']== "" || $_POST['reg_password_confirm']== "" || $_POST['reg_email']=="") {
 
     echo "<script>
@@ -25,7 +19,7 @@ else if($_POST['reg_password'] != $_POST['reg_password_confirm']) {
         window.location.href='sign_up.php';
         </script>";
 } else {
-    $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
+    include ("database/database_connection.php");
     $sql_query = "INSERT INTO users (username, password, email) VALUES ('" . $_POST["reg_username"] . "', '"
         . $_POST["reg_password"] . "', '" . $_POST["reg_email"] . "')";
 

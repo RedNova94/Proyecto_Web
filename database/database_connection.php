@@ -5,3 +5,13 @@
  * Date: 5/16/2017
  * Time: 11:27 AM
  */
+
+$servidor = "localhost";
+$usuario = "root";
+$contrasena = "";
+$basedatos = "ShadowPlay";
+
+$conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
+if (!$conexion) {
+    die("Fallo: " . mysqli_connect_error());
+}

@@ -6,19 +6,10 @@
  * Time: 6:34 PM
  */
 
-    $servidor = "localhost";
-    $usuario = "root";
-    $contrasena = "";
-    $basedatos = "ShadowPlay";
-
-    $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
-    if (!$conexion) {
-        die("Fallo: " . mysqli_connect_error());
-    }
-
     $username = $_POST['lg_username'];
     $password = $_POST['lg_password'];
 
+    include ("database/database_connection.php");
     $sql_query = "SELECT username, password FROM users WHERE username ='" . $username. "' 
                 AND password ='" . $password . "'";
 

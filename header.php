@@ -5,7 +5,7 @@
 
     <title><?= isset($PageTitle) ? $PageTitle : "Default Title"?></title>
     <!-- Additional tags here -->
-    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="css/style_main.css">
     <?php if (function_exists('customPageHeader')){
         customPageHeader();
     }?>

@@ -24,7 +24,7 @@
         </a>
         </li>
         <li>
-            <a href='#peliculas' title='Peliculas'>
+            <a href='#discos' title='Catalogos'>
                 <span>Catálogo</span>
             </a>
         </li>

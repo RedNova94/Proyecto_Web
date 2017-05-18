@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-<?php
-$PageTitle="Página Principal";
-function customPageHeader(){?>
-    <!--Arbitrary HTML Tags-->
-
-<?php }
-if(count($_COOKIE) > 0){
-    if ($_COOKIE["shadowplay_username"] == "") {
-        include_once ("header.php");
-    } else {
-        include_once ("session_header.php");
-    }
-} else {
-    include_once ("header.php");
-}
-?>
-
-<?php  include "disc_catalog.php" ?>
-
-
-<?php
-include_once('footer.php');
-=======
 <?php
 $PageTitle="Página Principal";
 function customPageHeader(){?>
@@ -74,5 +50,4 @@ if(count($_COOKIE) > 0){
 
 <?php
 include_once('footer.php');
->>>>>>> d67fbe3336f950ea74126afa43e7a356852b8271
 ?>

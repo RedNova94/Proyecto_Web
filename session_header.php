@@ -25,7 +25,7 @@
             </a>
         </li>
         <li>
-            <a href='#discos' title='Catálogo'>
+            <a href='catalogo.php' title='Catálogo'>
                 <span>Catálogo</span>
             </a>
         </li>
@@ -44,6 +44,13 @@
                 <span>Cerrar Sesión</span>
             </a>
         </li>
+        <?php if($_COOKIE['shadowplay_priviledge'] == 1) {
+            ?>
+        <li>
+            <a href="#nuevoDisco" title="Nuevo Disco"> Nuevo Disco</a>
+        </li>
+        <?php } ?>
+
     </ul>
 
 

@@ -23,7 +23,7 @@
         </a>
         </li>
         <li>
-            <a href='#peliculas' title='Peliculas'>
+            <a href='catalogo.php' title='Catálogo'>
                 <span>Catálogo</span>
             </a>
         </li>

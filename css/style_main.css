@@ -57,6 +57,7 @@ body {
     background-clip: padding-box;
     padding:0 20px 20px 20px;
     min-height:340px;
+    overflow: scroll;
 }
 
 .box:hover {
@@ -68,6 +69,7 @@ body {
     font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
+
 }
 
 .box .box-content {
@@ -79,4 +81,17 @@ body {
 .box .box-content p {
     color:#515c66;
     text-transform:none;
+}
+
+
+.cd {
+  max-height:340px;
+  max-width: 340px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.box h1.tag-title {
+  font-size: 100%;
+
 }

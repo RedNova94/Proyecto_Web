@@ -32,7 +32,7 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
             
             
              <tr>
-                <td> <a href="Carrito.php" target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
+                <td> <a href="cart.php" target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
             </tr>
             
         </table>

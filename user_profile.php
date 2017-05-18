@@ -8,6 +8,7 @@ $PageTitle="Perfil de ".$UserName;
 function customPageHeader(){?>
     <!--Arbitrary HTML Tags-->
     <link rel="stylesheet" href="css/style_user.css">
+    <script src="js/functions.js" type="text/javascript"></script>
 
 <?php }
 include_once('session_header.php');
@@ -26,6 +27,9 @@ include_once('session_header.php');
             <p>
                 <strong>Contraseña:</strong>
                 <?php echo $pw; ?>
+            </p>
+            <p>
+                <button onclick="endSession()"> Cerrar Sesión </button>
             </p>
 
         </div>

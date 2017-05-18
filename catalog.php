@@ -1,7 +1,10 @@
 <?php
+
 $PageTitle="Página Principal";
 function customPageHeader(){
+
 }
+
 if(count($_COOKIE) > 0){
     if ($_COOKIE["shadowplay_username"] == "") {
         include_once ("header.php");
@@ -11,5 +14,6 @@ if(count($_COOKIE) > 0){
 } else {
     include_once ("header.php");
 }
+
 include "disc_catalog.php";
 include_once('footer.php');

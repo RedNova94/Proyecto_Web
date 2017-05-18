@@ -30,6 +30,6 @@ if(count($_COOKIE) > 0){
             -
 
         </p>  <br />
-        <a href="catalogo.php" class="btn btn-block btn-primary">Volver al catálogo</a>
+        <a href="catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
     </div>
 </div>

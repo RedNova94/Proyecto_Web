@@ -25,7 +25,7 @@
             </a>
         </li>
         <li>
-            <a href='catalogo.php' title='Catálogo'>
+            <a href='catalog.php' title='Catálogo'>
                 <span>Catálogo</span>
             </a>
         </li>

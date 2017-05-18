@@ -42,6 +42,11 @@ body {
 #tabs25 ul li a.current {
     color: #fff;
 }
+
+#tabs25 ul li:last-child{
+  float:right;
+}
+
 /* ---------------------- END Blueslate nav ---------------------- */
 
 /* Style Index */
@@ -76,7 +81,20 @@ body {
     background-clip: padding-box;
     box-sizing: border-box;
 }
+
+
 .box .box-content p {
     color:#515c66;
     text-transform:none;
+}
+
+.icon {
+  margin-top: -5px;
+  height: 75%;
+  width: 75%;
+  display: inline-block;
+}
+
+.icon + span {
+  float:right;
 }

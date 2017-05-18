@@ -2,6 +2,8 @@
 html,
 body {
     background: #2e2e2e;
+    background-image: url("http://i.imgur.com/cLeYIU2.jpg");
+    background-repeat: no-repeat;
     padding: 55px;
     padding-top: 0px;
     font-family: 'Varela Round';

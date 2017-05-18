@@ -1,6 +1,6 @@
 <?php
 
-$PageTitle="Página Principal";
+$PageTitle="Catálogo";
 function customPageHeader(){
 
 }

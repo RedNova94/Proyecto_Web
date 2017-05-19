@@ -1,8 +1,8 @@
 <?php
-$UserName= $_COOKIE['shadowplay_username'];
+$UserName= $_SESSION['shadowplay_username'];
 $UserAvatar = "http://i.imgur.com/8Q693z1.png";
-$UserEmail=$_COOKIE['shadowplay_email'];
-$pw =$_COOKIE['shadowplay_password'];
+$UserEmail=$_SESSION['shadowplay_email'];
+$UserPassword =$_SESSION['shadowplay_password'];
 $PageTitle="Perfil de ".$UserName;
 
 function customPageHeader(){?>
@@ -26,10 +26,7 @@ include_once('session_header.php');
             </p>
             <p>
                 <strong>Contraseña:</strong>
-                <?php echo $pw; ?>
-            </p>
-            <p>
-                <button onclick="endSession()"> Cerrar Sesión </button>
+                <?php  ?>
             </p>
 
         </div>

@@ -6,14 +6,11 @@
  * Time: 10:07 AM
  */
 $PageTitle="Carrito";
-if(count($_COOKIE) > 0){
-    if ($_COOKIE["shadowplay_username"] == "") {
-        include_once ("header.php");
-    } else {
-        include_once ("session_header.php");
-    }
-} else {
+
+if (isset($_SESSION['shadowplay_username'])) {
     include_once ("header.php");
+} else {
+    include_once ("session_header.php");
 }
 
 ?>
@@ -30,6 +27,6 @@ if(count($_COOKIE) > 0){
             -
 
         </p>  <br />
-        <a href="catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
+        <a href="disc_catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
     </div>
 </div>

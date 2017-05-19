@@ -5,6 +5,18 @@
  * Date: 5/18/2017
  * Time: 10:56 AM
  */
+$PageTitle="Catálogo";
+function customPageHeader(){
+
+}
+
+
+if (isset($_SESSION['shadowplay_username'])) {
+    include_once ("header.php");
+} else {
+    include_once ("session_header.php");
+}
+
 
 include "database/database_connection.php";
 $sql_query = "SELECT * FROM Inventory";
@@ -41,4 +53,8 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
     <br>
     <br>
 
-<?php } ?>
+<?php }
+
+include_once('footer.php');
+
+?>

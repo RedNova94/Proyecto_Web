@@ -6,11 +6,14 @@
     <title><?= isset($PageTitle) ? $PageTitle : "Default Title"?></title>
     <!-- Additional tags here -->
     <link rel="stylesheet" href="css/style_main.css">
+    <script src="js/functions.js"></script>
+
     <?php if (function_exists('customPageHeader')){
         customPageHeader();
     }?>
 
     <title>Title</title>
+
     <link rel="stylesheet" href="css/style_main.css">
     <script src="js/functions.js"></script>
 
@@ -24,7 +27,7 @@
         </a>
         </li>
         <li>
-            <a href='catalog.php' title='Catalogos'>
+            <a href='disc_catalog.php' title='Catalogos'>
                 <span>Catálogo</span>
             </a>
         </li>
@@ -37,14 +40,6 @@
             <a href='sign_in.php' title='Iniciar Sesion'>
                 <span>Iniciar Sesión</span>
             </a>
-        </li>
-        <li>
-
-        <a href="#carrito" title='Carrito'>
-          <img class="icon" src="images/shopcart.png" >
-          <span>1</span>
-        </a>
-
         </li>
     </ul>
 

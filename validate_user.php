@@ -8,6 +8,7 @@
 
     $username = $_POST['lg_username'];
     $password = $_POST['lg_password'];
+
     include ("database/database_connection.php");
     $sql_query = "SELECT username, password, email, admin FROM users WHERE username ='" . $username. "' 
                 AND password ='" . $password . "'";

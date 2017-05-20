@@ -39,18 +39,19 @@
                 <span> <?php echo $_SESSION["shadowplay_username"]?> </span>
             </a>
         </li>
+        <?php if($_SESSION['shadowplay_priviledge'] == 1) {
+            ?>
+            <li>
+                <a href="add_product.php" title="Nuevo Disco"> Nuevo Disco</a>
+            </li>
+
+        <?php } ?>
         <li>
             <a href="end_session.php" title = 'Cerrar Sesión'>
                 <span>Cerrar Sesión</span>
             </a>
         </li>
-        <?php if($_SESSION['shadowplay_priviledge'] == 1) {
-            ?>
-        <li>
-            <a href="#nuevoDisco" title="Nuevo Disco"> Nuevo Disco</a>
-        </li>
 
-        <?php } ?>
 
     </ul>
 

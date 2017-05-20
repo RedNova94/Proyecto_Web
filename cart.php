@@ -28,6 +28,6 @@ if($_SESSION["shadowplay_islog"]) {
             -
 
         </p>  <br />
-        <a href="catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
+        <a href="disc_catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
     </div>
 </div>

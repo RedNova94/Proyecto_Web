@@ -2,13 +2,12 @@
 
 $PageTitle="Página Principal";
 
-
-if (isset($_SESSION['shadowplay_username'])) {
-    include_once ("header.php");
-} else {
+session_start();
+if(isset($_SESSION["shadowplay_islog"])) {
     include_once ("session_header.php");
+} else {
+    include_once ("header.php");
 }
-
 
 ?>
 

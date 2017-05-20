@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
 
-    <?php
-    if (function_exists('customPageHeader')){
+    <title><?= isset($PageTitle) ? $PageTitle : "Default Title"?></title>
+    <!-- Additional tags here -->
+    <link rel="stylesheet" href="style_main.css">
+    <?php if (function_exists('customPageHeader')){
         customPageHeader();
-    }
-    ?>
+    }?>
 
     <title>Title</title>
-
-    <link rel="stylesheet" href="./css/style_main.css">
+    <link rel="stylesheet" href="css/style_main.css">
     <script src="js/functions.js"></script>
 
 
@@ -36,7 +36,7 @@
         </li>
         <li>
             <a href='user_profile.php' title= 'Usuario'>
-                <span> <?php echo $_SESSION["shadowplay_username"] ?> </span>
+                <span> <?php echo $_SESSION["shadowplay_username"]?> </span>
             </a>
         </li>
         <li>
@@ -44,16 +44,10 @@
                 <span>Cerrar Sesión</span>
             </a>
         </li>
-        <?php if($_COOKIE['shadowplay_priviledge'] == 1) {
+        <?php if($_SESSION['shadowplay_priviledge'] == 1) {
             ?>
         <li>
             <a href="#nuevoDisco" title="Nuevo Disco"> Nuevo Disco</a>
-        </li>
-        <li>
-            <a href="cart.php" title='Carrito'>
-                <img class="icon" src="images/shopcart.png" >
-                <span>1</span>
-            </a>
         </li>
 
         <?php } ?>

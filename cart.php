@@ -7,10 +7,11 @@
  */
 $PageTitle="Carrito";
 
-if (isset($_SESSION['shadowplay_username'])) {
-    include_once ("header.php");
-} else {
+session_start();
+if($_SESSION["shadowplay_islog"]) {
     include_once ("session_header.php");
+} else {
+    include_once ("header.php");
 }
 
 ?>
@@ -27,6 +28,6 @@ if (isset($_SESSION['shadowplay_username'])) {
             -
 
         </p>  <br />
-        <a href="disc_catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
+        <a href="catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
     </div>
 </div>

@@ -5,15 +5,12 @@
 
     <title><?= isset($PageTitle) ? $PageTitle : "Default Title"?></title>
     <!-- Additional tags here -->
-    <link rel="stylesheet" href="css/style_main.css">
-    <script src="js/functions.js"></script>
 
     <?php if (function_exists('customPageHeader')){
         customPageHeader();
     }?>
 
-    <title>Title</title>
-
+    
     <link rel="stylesheet" href="css/style_main.css">
     <script src="js/functions.js"></script>
 
@@ -41,6 +38,7 @@
                 <span>Iniciar Sesión</span>
             </a>
         </li>
+
     </ul>
 
 

@@ -88,16 +88,15 @@ body {
     color:#515c66;
     text-transform:none;
 }
-
 .icon {
   margin-top: -5px;
-  height: 50%;
-  width: 50%;
-  display: inline-block;
+  height: 75%;
+  width: auto;
+
 }
 
 .icon + span {
-    float: right;
+  float: right;
 }
 
 .cd {

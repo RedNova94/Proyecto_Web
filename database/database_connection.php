@@ -9,7 +9,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $contrasena = "";
-$basedatos = "ShadowPlay";
+$basedatos = "shadowplay";
 
 $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
 if (!$conexion) {

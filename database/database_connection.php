@@ -8,7 +8,7 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$contrasena = "";
+$contrasena = "chalo123";
 $basedatos = "shadowplay";
 
 $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);

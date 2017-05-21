@@ -14,7 +14,6 @@ function customPageHeader(){?>
 <?php }
 include_once ("session_header.php");
 ?>
-
     <div class="box cd">
         <?php  include "show_users.php" ?>
         <div class="box-content">
@@ -29,4 +28,8 @@ include_once ("session_header.php");
 
 <?php
 include_once('footer.php');
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 3f34491291f2bd762b8f2d067c277629cc4417ec

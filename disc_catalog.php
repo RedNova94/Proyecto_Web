@@ -23,29 +23,16 @@ $resultado = mysqli_query($conexion, $sql_query);
 while ($row = mysqli_fetch_array($resultado)){ ?>
     <div class="box cd">
       <div class="box-content">
+        <h2><?php echo $row['product_name'] ?></h2>
+        <hr />
+        <img src="<?php echo $row['product_description'] ?>" style="width: 30%; height: 30%;"/>
 
+        <h4><?php echo $row['product_artist'] ?> </h4>
+        <p>
+          <?php echo $row['product_price'] ?>
+        </p>
 
-        <table>
-            <tr>
-                <td><strong> TITULO </strong></td>
-                <td> <?php echo $row['product_name'] ?> </td>
-            </tr>
-            <tr>
-                <td><strong> ARTISTA </strong></td>
-                <td> <?php echo $row['product_artist'] ?> </td>
-            </tr>
-            <tr>
-                <td><strong> DESCRPICION </strong></td>
-                <td> <?php echo $row['product_description'] ?> </td>
-            </tr>
-            <tr>
-                <td><strong> PRECIO </strong></td>
-                <td> <?php echo $row['product_price'] ?> </td>
-            </tr>
-            <tr>
-                <td> <a href="shopping_cart.php?id=<?php echo $row['product_id']?> " target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
-            </tr>
-        </table>
+        <a href="Carrito.php?id=<?php echo $row['product_id']?> " target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
         </div>
     </div>
 

@@ -10,7 +10,7 @@ $PageTitle="Carrito";
     include_once ("session_header.php");
 
 include "database/database_connection.php";
-$sql_query = "SELECT * FROM Inventory WHERE id=".$_GET['id'];
+$sql_query = "SELECT * FROM Inventory WHERE id=''";
 $resultado = mysqli_query($conexion, $sql_query);
 
 while ($row = mysqli_fetch_array($resultado)){?>

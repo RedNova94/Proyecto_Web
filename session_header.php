@@ -48,7 +48,7 @@
 
         <?php } ?>
         <li>
-            <a href='carrito.php' title='Carrito'>
+            <a href='shopping_cart.php' title='Carrito'>
                 <span>Carrito</span>
             </a>
         </li>

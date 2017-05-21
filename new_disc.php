@@ -15,7 +15,7 @@ if($_POST['add_titulo']=="" || $_POST['add_artista']== "" || $_POST['add_descrip
 } else {
     include ("database/database_connection.php");
     $sql_query = "INSERT INTO inventory (product_name, product_artist, product_description, product_price) 
-                  VALUES ('" . $_POST["Titulo"] . "', '" . $_POST["Artista"] . "', '" . $_POST["Descripcion"] . "', '" . $_POST["Precio"] . "')";
+                  VALUES ('" . $_POST["add_titulo"] . "', '" . $_POST["add_artista"] . "', '" . $_POST["add_descripcion"] . "', '" . $_POST["add_precio"] . "')";
 
     mysqli_query($conexion, $sql_query);
     mysqli_close($conexion);

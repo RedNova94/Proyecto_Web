@@ -33,8 +33,6 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
         </p>
 
         <a href="Carrito.php?id=<?php echo $row['product_id']?> " target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
-
-
         </div>
     </div>
 

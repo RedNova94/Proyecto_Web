@@ -38,6 +38,17 @@
                 <span>Iniciar Sesión</span>
             </a>
         </li>
+        <li>
+            <a href='carrito.php' title='Carrito'>
+                <span>Carrito</span>
+            </a>
+        </li>
+
+        <li>
+            <a href='users_table.php' title='users'>
+                <span>users</span>
+            </a>
+        </li>
     </ul>
 
 

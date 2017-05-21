@@ -6,7 +6,7 @@
  * Time: 10:50 AM
  */
 
-if($_POST['Titulo']=="" || $_POST['Artista']== "" || $_POST['Descripcion']== "" || $_POST['Precio']=="") {
+if($_POST['add_itulo']=="" || $_POST['add_artista']== "" || $_POST['add_descripcion']== "" || $_POST['add_precio']=="") {
 
     echo "<script>
     alert('Por favor llena todos los campos');

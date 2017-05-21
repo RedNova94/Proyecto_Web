@@ -24,22 +24,23 @@ include_once('session_header.php');
                     <div class="main-login-form">
                         <div class="login-group">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="Titulo" name="Titulo" placeholder="titulo">
+                                <input type="text" class="form-control" id="add_titulo" name="add_titulo" placeholder="titulo">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="Artista" name="Artista" placeholder="artista">
+                                <input type="text" class="form-control" id="add_artista" name="add_artista" placeholder="artista">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="Descripcion" name="Descripción" placeholder="descripcion">
+                                <input type="text" class="form-control" id="add_descripcion" name="add_descripción" placeholder="descripcion">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" id="Precio" name="Precio" placeholder="precio">
+                                <input type="number" class="form-control" id="add_recio" name="add_precio" placeholder="precio">
                             </div>
                         </div>
-                    <div><p></p></div>
+                    <div>
+                        <p></p>
+                    </div>
                         <button type="submit"><i>Agregar</i></button>
                     </div>
-
                 </form>
             </div>
         </div>

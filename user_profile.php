@@ -19,7 +19,10 @@ include_once('session_header.php');
     <div class="box-content">
         <h1 class="tag-title"><?php echo $UserName; ?></h1>
         <hr />
-        <img src="<?php echo $UserAvatar; ?>">
+        <div >
+            <img src="<?php echo $UserAvatar; ?>">
+            <button onclick="changeAvatar()"> Cambiar Imagen</button>
+        </div>
         <div class="about">
             <p>
                 <strong>Email:</strong>
@@ -29,10 +32,6 @@ include_once('session_header.php');
                 <strong>Contraseña:</strong>
                 <?php echo $pw; ?>
             </p>
-            <p>
-                <button onclick="endSession()"> Cerrar Sesión </button>
-            </p>
-
         </div>
     </div>
 </div>

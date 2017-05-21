@@ -47,10 +47,16 @@
 
         <?php } ?>
         <li>
+            <a>
+                <span> </span>
+            </a>
+        </li>
+        <li>
             <a href="end_session.php" title = 'Cerrar Sesión'>
                 <span>Cerrar Sesión</span>
             </a>
         </li>
+
 
 
     </ul>

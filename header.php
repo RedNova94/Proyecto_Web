@@ -33,7 +33,21 @@
                 <span>Iniciar Sesión</span>
             </a>
         </li>
+<<<<<<< HEAD
 
+=======
+        <li>
+            <a href='carrito.php' title='Carrito'>
+                <span>Carrito</span>
+            </a>
+        </li>
+
+        <li>
+            <a href='users_table.php' title='users'>
+                <span>users</span>
+            </a>
+        </li>
+>>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116
     </ul>
 
 

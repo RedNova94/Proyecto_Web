@@ -29,11 +29,6 @@
             </a>
         </li>
         <li>
-            <a href='#miembros' title='Miembros'>
-                <span>Miembros</span>
-            </a>
-        </li>
-        <li>
             <a href='sign_in.php' title='Iniciar Sesion'>
                 <span>Iniciar Sesión</span>
             </a>

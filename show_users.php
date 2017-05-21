@@ -6,7 +6,9 @@
  * Time: 12:18 PM
  */
 $PageTitle="Users";
-include_once ("header.php");
+session_start();
+
+include_once ("session_header.php");
 
 include "database/database_connection.php";
 $sql_query = "SELECT * FROM users";

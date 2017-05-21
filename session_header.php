@@ -6,7 +6,8 @@
     <title><?= isset($PageTitle) ? $PageTitle : "Default Title"?></title>
     <!-- Additional tags here -->
     <link rel="stylesheet" href="style_main.css">
-    <?php if (function_exists('customPageHeader')){
+    <?php
+    if (function_exists('customPageHeader')){
         customPageHeader();
     }?>
 
@@ -30,7 +31,7 @@
             </a>
         </li>
         <li>
-            <a href='#miembros' title='Miembros'>
+            <a href='show_users.php' title='Miembros'>
                 <span>Miembros</span>
             </a>
         </li>

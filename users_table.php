@@ -36,8 +36,4 @@ if(count($_COOKIE) > 0){
 
 <?php
 include_once('footer.php');
-<<<<<<< HEAD
-?>
-=======
-?>
->>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116
+

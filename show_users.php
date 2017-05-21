@@ -6,13 +6,9 @@
  * Time: 12:18 PM
  */
 $PageTitle="Users";
-<<<<<<< HEAD
 session_start();
 
 include_once ("session_header.php");
-=======
-include_once ("header.php");
->>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116
 
 include "database/database_connection.php";
 $sql_query = "SELECT * FROM users";
@@ -35,11 +31,9 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
             </tr>
             <tr>
                 <td><strong> Admin </strong></td>
-<<<<<<< HEAD
+
                <td> <?php if ($row['admin']==1){
-=======
-                <td> <?php if ($row['admin']==1){
->>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116
+
                     echo "si";
                     } else{
                     echo "no";
@@ -53,8 +47,3 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
     <br>
 
 <?php } ?>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116

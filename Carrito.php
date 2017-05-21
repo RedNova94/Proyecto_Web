@@ -6,7 +6,8 @@
  * Time: 10:07 AM
  */
 $PageTitle="Carrito";
-    include_once ("header.php");
+    session_start();
+    include_once ("session_header.php");
 
 include "database/database_connection.php";
 $sql_query = "SELECT * FROM Inventory WHERE id=".$_GET['id'];

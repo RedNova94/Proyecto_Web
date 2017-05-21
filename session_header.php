@@ -48,8 +48,8 @@
 
         <?php } ?>
         <li>
-            <a>
-                <span> </span>
+            <a href='carrito.php' title='Carrito'>
+                <span>Carrito</span>
             </a>
         </li>
         <li>

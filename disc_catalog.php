@@ -42,18 +42,9 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
                 <td><strong> PRECIO </strong></td>
                 <td> <?php echo $row['product_price'] ?> </td>
             </tr>
-<<<<<<< HEAD
-
-
-             <tr>
-                <td> <a href="cart.php" target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
-            </tr>
-
-=======
             <tr>
                 <td> <a href="Carrito.php?id=<?php echo $row['product_id']?> " target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
             </tr>
->>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116
         </table>
         </div>
     </div>

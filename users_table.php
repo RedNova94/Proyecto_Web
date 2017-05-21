@@ -7,19 +7,12 @@
  */
 
 $PageTitle="Página Principal";
+session_start();
 function customPageHeader(){?>
     <!--Arbitrary HTML Tags-->
 
 <?php }
-if(count($_COOKIE) > 0){
-    if ($_COOKIE["shadowplay_username"] == "") {
-        include_once ("header.php");
-    } else {
-        include_once ("session_header.php");
-    }
-} else {
-    include_once ("header.php");
-}
+include_once ("session_header.php");
 ?>
 
     <div class="box cd">
@@ -36,8 +29,4 @@ if(count($_COOKIE) > 0){
 
 <?php
 include_once('footer.php');
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116

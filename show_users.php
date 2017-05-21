@@ -29,7 +29,11 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
             </tr>
             <tr>
                 <td><strong> Admin </strong></td>
-                <td> <?php echo $row['admin'] ?> </td>
+               <td> <?php if ($row['admin']==1){
+                    echo "si";
+                    } else{
+                    echo "no";
+}?> </td>
             </tr>
 
         </table>

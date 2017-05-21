@@ -22,7 +22,7 @@ include_once('session_header.php');
             <div class="logo"><i>Registrar Disco<i></i></div>
             <!-- Main Form -->
             <div class="login-form-1">
-                <form id="login-form"  class="text-left" action="new_disc.php" method="post">
+                <form id="login-form" action="new_disc.php" class="text-left"  method="post">
                     <div class="main-login-form">
                         <div class="login-group">
                             <div class="form-group">

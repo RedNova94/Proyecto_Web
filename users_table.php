@@ -6,21 +6,15 @@
  * Time: 12:26 PM
  */
 
-$PageTitle="Página Principal";
+$PageTitle="Lista de miembros";
 function customPageHeader(){?>
     <!--Arbitrary HTML Tags-->
 
 <?php }
 include_once ("session_header.php");
 ?>
-    <div class="box cd">
+    <div class="box">asdfasfgsdg
         <?php  include "show_users.php" ?>
-        <div class="box-content">
-            <hr />
-            <img class="album" src="" />
-            <br />
-            <a href="index.php" class="btn btn-block btn-primary">volver</a>
-        </div>
     </div>
 
 

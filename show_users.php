@@ -5,7 +5,7 @@
  * Date: 21/05/2017
  * Time: 12:18 PM
  */
-$PageTitle="Users";
+$PageTitle="Miembros";
 session_start();
 
 include_once ("session_header.php");
@@ -13,9 +13,14 @@ include_once ("session_header.php");
 include "database/database_connection.php";
 $sql_query = "SELECT * FROM users";
 $resultado = mysqli_query($conexion, $sql_query);
+?>
+<div class="box">
 
+<?php
 while ($row = mysqli_fetch_array($resultado)){ ?>
-    <div class="box cd">
+      <div class="box-content">
+
+
         <table>
             <tr>
                 <td><strong> Nombre </strong></td>
@@ -37,13 +42,13 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
                     echo "si";
                     } else{
                     echo "no";
-}?> </td>
+                    }?>
+               </td>
             </tr>
 
         </table>
-    </div>
+      </div>
+      <hr />
 
-    <br>
-    <br>
-
-<?php } ?>
+<?php }?>
+</div>

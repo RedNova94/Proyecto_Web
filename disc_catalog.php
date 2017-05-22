@@ -6,9 +6,9 @@
  * Time: 10:56 AM
  */
 $PageTitle="Página Principal";
-function customPageHeader(){
-
-}
+function customPageHeader(){?>
+ <link rel="stylesheet" href="css/style_catalog.css">
+<?php }
 session_start();
 if(isset($_SESSION["shadowplay_islog"])) {
     include_once ("session_header.php");
@@ -22,11 +22,13 @@ $filter_query = "SELECT * FROM inventory WHERE LIKE ";
 $resultado = mysqli_query($conexion, $sql_query);
 
 while ($row = mysqli_fetch_array($resultado)){ ?>
-    <div class="box cd">
-      <div class="box-content">
-        <h2><?php echo $row['product_name'] ?></h2>
+    <div class="cd">
+      <div class="cd-content">
+        <h3><?php echo $row['product_name'] ?></h3>
         <hr />
-        <img src="<?php echo $row['product_image'] ?>" style="width: 30%; height: 30%;"/>
+        <img src="<?php echo $row['product_image'] ?>" class="art"/>
+        <div class="about">
+
 
         <h4><?php echo $row['product_artist'] ?> </h4>
         <p>
@@ -36,6 +38,7 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
         if(isset($_SESSION["shadowplay_islog"])) { ?>
         <a target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
         <?php } ?>
+        </div>
       </div>
     </div>
 

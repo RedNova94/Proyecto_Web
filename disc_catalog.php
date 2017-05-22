@@ -33,7 +33,7 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
         </p>
         <?php
         if(isset($_SESSION["shadowplay_islog"])) { ?>
-        <a href="shopping_cart.php?id=<?php echo $row['product_id'];?> " target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
+        <a target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
         <?php } ?>
       </div>
     </div>

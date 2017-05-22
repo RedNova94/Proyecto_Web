@@ -3,5 +3,5 @@
  */
 
 function changeAvatar(){
-    open("upload_avatar.php")
+    window.location = "upload_avatar.php";
 }

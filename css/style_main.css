@@ -88,7 +88,7 @@ body {
     color:#515c66;
     text-transform:none;
 }
-<<<<<<< HEAD
+
 .icon {
   margin-top: -5px;
   height: 75%;
@@ -110,7 +110,6 @@ body {
 .box h1.tag-title {
   font-size: 100%;
 }
-=======
 /*========buttons style*/
 button{
     border: none;
@@ -129,4 +128,3 @@ button:hover {
     color: #3a7999;
     box-shadow: inset 0 0 0 3px #3a7999;
 }
->>>>>>> a81f08dff0ee3435fcd730659d849c49177ed116

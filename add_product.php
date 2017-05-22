@@ -32,10 +32,10 @@ include_once('session_header.php');
                                 <input type="text" class="form-control" id="add_artista" name="add_artista" placeholder="artista">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="add_descripcion" name="add_descripción" placeholder="descripcion">
+                                <input type="text" class="form-control" id="add_imagen" name="add_imagen" placeholder="url">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" id="add_recio" name="add_precio" placeholder="precio">
+                                <input type="number" class="form-control" id="add_precio" name="add_precio" placeholder="precio">
                             </div>
                         </div>
                     <div>

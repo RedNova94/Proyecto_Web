@@ -6,7 +6,7 @@
  * Time: 10:50 AM
  */
 
-if($_POST['add_titulo']=="" || $_POST['add_artista']== "" || $_POST['add_descripcion']== "" || $_POST['add_precio']=="") {
+if($_POST['add_titulo']=="" || $_POST['add_artista']== "" || $_POST['add_imagen']== "" || $_POST['add_precio']=="") {
 
     echo "<script>
     alert('Por favor llena todos los campos');
@@ -14,8 +14,8 @@ if($_POST['add_titulo']=="" || $_POST['add_artista']== "" || $_POST['add_descrip
     </script>";
 } else {
     include ("database/database_connection.php");
-    $sql_query = "INSERT INTO inventory (product_name, product_artist, product_description, product_price) 
-                  VALUES ('" . $_POST["add_titulo"] . "', '" . $_POST["add_artista"] . "', '" . $_POST["add_descripcion"] . "', '" . $_POST["add_precio"] . "')";
+    $sql_query = "INSERT INTO inventory (product_name, product_artist, product_image, product_price) 
+                  VALUES ('" . $_POST["add_titulo"] . "', '" . $_POST["add_artista"] . "', '" . $_POST["add_imagen"] . "', '" . $_POST["add_precio"] . "')";
 
     mysqli_query($conexion, $sql_query);
     mysqli_close($conexion);

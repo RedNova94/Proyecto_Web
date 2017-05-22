@@ -29,7 +29,7 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
 
         <h4><?php echo $row['product_artist'] ?> </h4>
         <p>
-          <?php echo $row['product_price'] ?>
+          $<?php echo $row['product_price'] ?>
         </p>
         <?php
         if(isset($_SESSION["shadowplay_islog"])) { ?>

@@ -62,7 +62,7 @@ body {
     background-clip: padding-box;
     padding:0 20px 20px 20px;
     min-height:340px;
-    
+
 }
 
 .box:hover {
@@ -99,8 +99,6 @@ body {
 .icon + span {
   float: right;
 }
-
-
 
 .box h1.tag-title {
   font-size: 100%;

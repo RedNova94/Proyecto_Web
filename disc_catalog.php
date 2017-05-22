@@ -25,15 +25,17 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
       <div class="box-content">
         <h2><?php echo $row['product_name'] ?></h2>
         <hr />
-        <img src="<?php echo $row['product_description'] ?>" style="width: 30%; height: 30%;"/>
+        <img src="<?php echo $row['product_image'] ?>" style="width: 30%; height: 30%;"/>
 
         <h4><?php echo $row['product_artist'] ?> </h4>
         <p>
-          <?php echo $row['product_price'] ?>
+          $<?php echo $row['product_price'] ?>
         </p>
-
-        <a href="Carrito.php?id=<?php echo $row['product_id']?> " target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
-        </div>
+        <?php
+        if(isset($_SESSION["shadowplay_islog"])) { ?>
+        <a href="shopping_cart.php?id=<?php echo $row['product_id'];?> " target="rightframe"><button type="submit"><i>Comprar</i></button></a></td>
+        <?php } ?>
+      </div>
     </div>
 
 <?php }

@@ -21,20 +21,23 @@ $sql_query = "SELECT * FROM inventory";
 $resultado = mysqli_query($conexion, $sql_query);
 
 while ($row = mysqli_fetch_array($resultado)){ ?>
-    <div class="box cd">
-      <div class="box-content">
-        <h2><?php echo $row['product_name'] ?></h2>
+    <div class="cd">
+      <div class="cd-content">
+        <h3><?php echo $row['product_name'] ?></h3>
         <hr />
-        <img src="<?php echo $row['product_image'] ?>" style="width: 50%; height: 50%;"/>
+        <img src="<?php echo $row['product_image'] ?>" class="art"/>
+        <div class="about">
 
-        <h4 class="about"><?php echo $row['product_artist'] ?> </h4>
-        <p class="about">
+
+        <h4><?php echo $row['product_artist'] ?> </h4>
+        <p>
           $<?php echo $row['product_price'] ?>
         </p>
         <?php
         if(isset($_SESSION["shadowplay_islog"])) { ?>
-        <a class="about" target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
+        <a target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
         <?php } ?>
+        </div>
       </div>
     </div>
 

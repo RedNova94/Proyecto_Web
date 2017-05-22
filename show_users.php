@@ -45,6 +45,11 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
                     }?>
                </td>
             </tr>
+            <tr>
+                <td>
+                    <button onclick="window.location='delet_this.php?id=<?php echo $row['username']; ?>'">Eliminar</button>
+                </td>
+            </tr>
 
         </table>
       </div>

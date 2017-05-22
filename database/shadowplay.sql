@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2017 at 06:30 PM
+-- Generation Time: May 22, 2017 at 10:49 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -18,7 +18,10 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `shadowplay`
--- ------------------------------------------------------
+--
+
+-- --------------------------------------------------------
+
 --
 -- Table structure for table `inventory`
 --
@@ -27,7 +30,7 @@ CREATE TABLE `inventory` (
   `product_id` int(11) NOT NULL,
   `product_name` varchar(30) NOT NULL,
   `product_artist` varchar(30) NOT NULL,
-  `product_description` varchar(140) NOT NULL,
+  `product_image` varchar(140) NOT NULL,
   `product_price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -35,9 +38,13 @@ CREATE TABLE `inventory` (
 -- Dumping data for table `inventory`
 --
 
-INSERT INTO `inventory` (`product_id`, `product_name`, `product_artist`, `product_description`, `product_price`) VALUES
-(1, 'Highway to Hell', 'AC/DC', 'Esto es un disco.', 100.49),
-(2, 'The Valley of the Dammned', 'Dragonforce', 'Esto es otro disco.', 120.49);
+INSERT INTO `inventory` (`product_id`, `product_name`, `product_artist`, `product_image`, `product_price`) VALUES
+(1, 'Highway to Hell', 'AC/DC', 'https://upload.wikimedia.org/wikipedia/en/a/ac/Acdc_Highway_to_Hell.JPG', 100.49),
+(2, 'The Valley of the Dammned', 'Dragonforce', 'https://upload.wikimedia.org/wikipedia/en/a/a9/DragonForce-ValleyOfTheDamned-AlbumCover.jpg', 120.49),
+(3, 'High Voltage', 'AC/DC', 'https://upload.wikimedia.org/wikipedia/en/f/fc/Acdc_high_voltage_international_album.jpg', 147),
+(4, 'Bridge Burning', 'Foo Fighters', 'https://upload.wikimedia.org/wikipedia/en/7/76/Foo_Fighters_-_Bridge_Burning_-_cover_art.jpg', 200),
+(5, 'Night at the Opera', 'Queen', 'https://upload.wikimedia.org/wikipedia/en/4/4d/Queen_A_Night_At_The_Opera.png', 250),
+(6, 'Random Acces Memories', 'Daft Punk', 'https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg', 200);
 
 -- --------------------------------------------------------
 
@@ -58,8 +65,11 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`username`, `password`, `email`, `admin`) VALUES
 ('gerry', 'chalo123', 'gerry_hd@live.com.mx', 1),
+('janedoe', 'tf2', 'tf2@hotmail.com', 0),
+('johndoe', 'password', 'example@gmail.com', 0),
 ('misu', 'ojovioleta27', 'suheilypergola@gmail.com', 1),
-('nova', 'dragondance', 'rnvasquez94@gmail.com', 1);
+('nova', 'dragondance', 'rnvasquez94@gmail.com', 1),
+('usuario', 'usuario', 'email@internet.com', 0);
 
 --
 -- Indexes for dumped tables
@@ -86,7 +96,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `inventory`
 --
 ALTER TABLE `inventory`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

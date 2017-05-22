@@ -31,17 +31,17 @@
             </a>
         </li>
         <li>
-            <a href='show_users.php' title='Miembros'>
-                <span>Miembros</span>
-            </a>
-        </li>
-        <li>
             <a href='user_profile.php' title= 'Usuario'>
                 <span> <?php echo $_SESSION["shadowplay_username"]?> </span>
             </a>
         </li>
         <?php if($_SESSION['shadowplay_priviledge'] == 1) {
             ?>
+            <li>
+                <a href='show_users.php' title='Miembros'>
+                    <span>Miembros</span>
+                </a>
+            </li>
             <li>
                 <a href="add_product.php" title="Nuevo Disco"> Nuevo Disco</a>
             </li>

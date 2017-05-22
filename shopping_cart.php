@@ -49,6 +49,6 @@ while ($row = mysqli_fetch_array($resultado)){?>
 
 
         </p>  <br />
-        <a href="catalogo.php" class="btn btn-block btn-primary">Volver al catálogo</a>
+        <a href="disc_catalog.php" class="btn btn-block btn-primary">Volver al catálogo</a>
     </div>
 </div>

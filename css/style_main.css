@@ -62,7 +62,6 @@ body {
     background-clip: padding-box;
     padding:0 20px 20px 20px;
     min-height:340px;
-    overflow: scroll;
 }
 
 .box:hover {

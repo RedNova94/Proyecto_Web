@@ -7,11 +7,12 @@
  */
 
 include ('database/database_connection.php');
-$sql_query = "DELETE FROM users WHERE username='.$_GET[id]' ";
+$id = $_GET['id'];
+$sql_query = "DELETE FROM users WHERE username='$id' ";
 
 mysqli_query($conexion, $sql_query);
 mysqli_close($conexion);
 
-header("location: index.php");
+header("location: show_users.php");
 
 ?>

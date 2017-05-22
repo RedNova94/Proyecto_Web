@@ -45,12 +45,16 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
                     }?>
                </td>
             </tr>
-            <tr>
+            <?php if($row['admin'] == 0){ ?>
+                <tr>
                 <td>
                     <button onclick="window.location='delet_this.php?id=<?php echo $row['username']; ?>'">Eliminar</button>
                 </td>
             </tr>
 
+            <?php
+                }
+            ?>
         </table>
       </div>
       <hr />

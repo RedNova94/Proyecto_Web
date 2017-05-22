@@ -18,6 +18,7 @@ if(isset($_SESSION["shadowplay_islog"])) {
 
 include "database/database_connection.php";
 $sql_query = "SELECT * FROM inventory";
+$filter_query = "SELECT * FROM inventory WHERE LIKE ";
 $resultado = mysqli_query($conexion, $sql_query);
 
 while ($row = mysqli_fetch_array($resultado)){ ?>

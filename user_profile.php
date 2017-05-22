@@ -34,6 +34,9 @@ include_once('session_header.php');
                 <strong>Email:</strong>
                 <?php echo $UserEmail; ?>
             </p>
+            <p>
+                <button onclick="window.location='upload_avatar.php'">Cambiar Imagen</button>
+            </p>
         </div>
     </div>
 </div>

@@ -6,9 +6,9 @@
  * Time: 10:56 AM
  */
 $PageTitle="Página Principal";
-function customPageHeader(){
-
-}
+function customPageHeader(){?>
+ <link rel="stylesheet" href="css/style_catalog.css">
+<?php }
 session_start();
 if(isset($_SESSION["shadowplay_islog"])) {
     include_once ("session_header.php");
@@ -25,15 +25,15 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
       <div class="box-content">
         <h2><?php echo $row['product_name'] ?></h2>
         <hr />
-        <img src="<?php echo $row['product_image'] ?>" style="width: 30%; height: 30%;"/>
+        <img src="<?php echo $row['product_image'] ?>" style="width: 50%; height: 50%;"/>
 
-        <h4><?php echo $row['product_artist'] ?> </h4>
-        <p>
+        <h4 class="about"><?php echo $row['product_artist'] ?> </h4>
+        <p class="about">
           $<?php echo $row['product_price'] ?>
         </p>
         <?php
         if(isset($_SESSION["shadowplay_islog"])) { ?>
-        <a target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
+        <a class="about" target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
         <?php } ?>
       </div>
     </div>

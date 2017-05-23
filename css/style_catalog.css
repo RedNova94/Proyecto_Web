@@ -25,7 +25,7 @@ img.art{
   background-clip: padding-box;
   padding:0 20px 20px 20px;
   min-height:250px;
-  max-width: 33%;
+  width: 33%;
   padding-right: 20px;
   display: inline-block;
 }
@@ -44,4 +44,13 @@ img.art{
 
 .cd h3 {
   font-size: 100%;
+}
+
+img#edit{
+  max-width: 5%;
+  max-height: 5%;
+}
+
+a#editlink{
+
 }

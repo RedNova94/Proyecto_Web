@@ -19,7 +19,7 @@
 
   $resultado = mysqli_query($conexion, $sql_query);
   $row = mysqli_fetch_array($resultado);
-
+  mysqli_close($conexion);
 
 ?>
 
@@ -50,7 +50,7 @@
                         <div>
                             <p></p>
                         </div>
-                            <button type="submit"><i>Guardar cambios</i></button>
+                            <button type="submit" onclick="<?php setcookie("cd_id", $_GET['cd'], time() + (86400 * 30), "/")?>"><i>Guardar cambios</i></button>
                         </div>
                     </form>
                 </div>

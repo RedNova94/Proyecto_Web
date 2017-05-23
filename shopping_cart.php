@@ -14,7 +14,10 @@ include_once ("session_header.php");
 } else {
 include_once ("header.php");
 }
-	$id=$_GET['id'];
+
+if(isset($_GET['id'])){
+    $id=$_GET['id'];
+}
 	include 'database/database_connection.php';
 	if(isset($_SESSION['carrito'])){
         if(isset($id)){
@@ -107,9 +110,9 @@ include_once ("header.php");
                     <img src="<?php echo $datos[$i]['Imagen'] ?>" style="width: 30%; height: 30%;"/><br>
                     <span><?php echo $datos[$i]['Nombre'];?></span><br>
                     <span><?php echo $datos[$i]['Artista'];?></span><br>
-                    <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
-                    <span>Cantidad: <input type="text" value="<?php echo $datos[$i]['Cantidad'];?>"></span><br>
-                    <span>Subtotal:<?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
+                    <span>Precio: $<?php echo $datos[$i]['Precio'];?></span><br>
+                    <span>Cantidad: <?php echo $datos[$i]['Cantidad'];?></span><br>
+                    <span>Subtotal: $<?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
                     
                 </center>
             </div>

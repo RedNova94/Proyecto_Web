@@ -21,6 +21,8 @@ $sql_query = "SELECT * FROM inventory";
 $filter_query = "SELECT * FROM inventory WHERE LIKE ";
 $resultado = mysqli_query($conexion, $sql_query);
 
+?>  <input id="search" type="text" name="search" placeholder="Buscar.."> <br /> <?php
+
 while ($row = mysqli_fetch_array($resultado)){ ?>
     <div class="cd">
       <div class="cd-content">
@@ -46,7 +48,27 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
         </div>
       </div>
     </div>
+<script>
+document.getElementById('search').onkeyup = function(){
 
+  var search_query = document.getElementById('search').value.toLowerCase();
+  var all_divs = document.getElementsByClassName('cd');
+  if(search_query){
+
+    for ( i = 0; i < all_divs.lersngth; i++ ){
+      if(!all_divs[i].textContent.toLowerCase().includes(search_query)){
+        all_divs[i].style.display = 'none';
+      }
+    }
+  }else{
+    for ( i = 0; i < all_divs.length; i++ ){
+      all_divs[i].style.display = 'inline-block';
+
+    }
+  }
+}
+
+</script>
 <?php }
 include_once('footer.php');
 ?>

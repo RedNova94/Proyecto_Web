@@ -24,7 +24,7 @@ if(isset($_POST["submit"])) {
         $full_name = $name.'.'.$imageExt;
         $uploadOk = 1;
     } else {
-        echo "<script> 
+        echo "<script>
                 alert('File is not an image.');
                 window.location='upload_avatar.php';
               </script>";
@@ -49,7 +49,7 @@ if (file_exists($tmp_name)) {
 }
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 500000) {
-    echo "<script> 
+    echo "<script>
                 alert('Sorry, your file is too large.');
                 window.location='upload_avatar.php';
               </script>";
@@ -57,7 +57,7 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 }
 // Allow certain file formats
 if($imageExt != "jpg" && $imageExt != "png") {
-    echo "<script> 
+    echo "<script>
                 alert('Sorry, only JPG and PNG files are allowed.');
                 window.location='upload_avatar.php';
               </script>";
@@ -65,7 +65,7 @@ if($imageExt != "jpg" && $imageExt != "png") {
 }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {;
-    echo "<script> 
+    echo "<script>
                 alert('Sorry, your file was not uploaded.');
                 window.location='upload_avatar.php';
               </script>";
@@ -73,12 +73,12 @@ if ($uploadOk == 0) {;
 } else {
     if (move_uploaded_file($tmp_name, $target_dir.$full_name)) {
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        echo "<script> 
+        echo "<script>
         alert('Imagen Guardada');
         window.location='user_profile.php';
       </script>";
     } else {
-        echo "<script> 
+        echo "<script>
                 alert('There was an error uploading your files');
                 window.location='upload_avatar.php';
               </script>";

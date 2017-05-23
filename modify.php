@@ -31,18 +31,9 @@
                 <div class="logo"><i>Modificar disco<i></i></div>
                 <!-- Main Form -->
 
-                    <form id="login-form" action="modify_disc.php?cd=<?php echo $_GET['cd']?>" class="text-left" method="post">
+                    <form id="login-form" action="modify_disc.php" class="text-left" method="post">
                         <div class="main-login-form">
                             <div class="login-group">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="mod_titulo" name="add_titulo" placeholder="titulo">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="mod_artista" name="add_artista" placeholder="artista">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="mod_imagen" name="add_imagen" placeholder="url">
-                                </div>
                                 <div class="form-group">
                                     <input type="number" class="form-control" id="mod_precio" name="add_precio" placeholder="precio">
                                 </div>

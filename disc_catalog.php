@@ -42,8 +42,10 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
         </p>
         <?php
         if(isset($_SESSION["shadowplay_islog"])) { ?>
-        <a target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
-
+            <form action="shopping_cart.php" method="post">
+                <input type="hidden" value="<?php echo $row['product_id'] ?>" id="cd_id" name="cd_id">
+                <input type="submit" value="Comprar">
+            </form>
         <?php } ?>
         </div>
       </div>
@@ -55,7 +57,7 @@ document.getElementById('search').onkeyup = function(){
   var all_divs = document.getElementsByClassName('cd');
   if(search_query){
 
-    for ( i = 0; i < all_divs.lersngth; i++ ){
+    for ( i = 0; i < all_divs.length; i++ ){
       if(!all_divs[i].textContent.toLowerCase().includes(search_query)){
         all_divs[i].style.display = 'none';
       }

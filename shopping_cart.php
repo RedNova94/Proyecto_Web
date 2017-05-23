@@ -17,8 +17,8 @@ include_once ("session_header.php");
 include_once ("header.php");
 }
 
-if(isset($_GET['id'])){
-    $id=$_GET['id'];
+if(isset($_POST["cd_id"])){
+    $id=$_POST["cd_id"];
 }
 	include 'database/database_connection.php';
 	if(isset($_SESSION['carrito'])){
@@ -153,5 +153,5 @@ if(isset($_GET['id'])){
     ?> </table> <?php
     echo '<center class="empty"><h2>Total: '.$total.'</h2></center>';
     ?>
-  <center><a href="disc_catalog.php">Ver catalogo</a></center>
+  <center><a href="disc_catalog.php">Volver al catálogo</a></center>
 </div>

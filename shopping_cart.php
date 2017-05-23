@@ -6,8 +6,10 @@
  * Time: 10:56 AM
 */
 $PageTitle="Carrito";
-function customPageHeader(){
-}
+function customPageHeader(){?>
+  <link rel="stylesheet" href="css/style_cart.css">
+
+<?php }
 session_start();
 if(isset($_SESSION["shadowplay_islog"])) {
 include_once ("session_header.php");
@@ -102,28 +104,54 @@ if(isset($_GET['id'])){
         $datos=$_SESSION['carrito'];
 
         $total=0;
-        for($i=0;$i<count($datos);$i++){
+        ?> <div class="box">
 
-            ?>
-            <div class="producto">
-                <center>
-                    <img src="<?php echo $datos[$i]['Imagen'] ?>" style="width: 30%; height: 30%;"/><br>
-                    <span><?php echo $datos[$i]['Nombre'];?></span><br>
-                    <span><?php echo $datos[$i]['Artista'];?></span><br>
-                    <span>Precio: $<?php echo $datos[$i]['Precio'];?></span><br>
-                    <span>Cantidad: <?php echo $datos[$i]['Cantidad'];?></span><br>
-                    <span>Subtotal: $<?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
-                    
-                </center>
-            </div>
+            <table>
+              <tr>
+                <th>
+                  Producto
+                </th>
+                <th>
+                  Cantidad
+                </th>
+                <th>
+                  Precio
+                </th>
+                <th>
+                  Subtotal
+                </th>
+              </tr>
+              <?php
+
+
+              for($i=0;$i<count($datos);$i++){
+
+              ?>
+              <tr>
+                <td>
+                  <?php echo $datos[$i]['Nombre'] ." - ". $datos[$i]['Artista'];?>
+                </td>
+                <td>
+                  <?php echo $datos[$i]['Cantidad'];?>
+                </td>
+                <td>
+                  <?php echo $datos[$i]['Precio'];?>
+                </td>
+                <td>
+                  <?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?>
+                </td>
+              </tr>
+
             <?php
             $total=($datos[$i]['Cantidad']*$datos[$i]['Precio'])+$total;
         }
 
-    }else{
-        echo '<center><h2>No has añadido ningun producto</h2></center>';
-    }
-    echo '<center><h2>Total: '.$total.'</h2></center>';
 
+    }else{
+        echo '<center class="empty"><h2>No has añadido ningún producto</h2></center>';
+    }
+    ?> </table> <?php
+    echo '<center class="empty"><h2>Total: '.$total.'</h2></center>';
     ?>
-    <center><a href="disc_catalog.php">Ver catalogo</a></center>
+  <center><a href="disc_catalog.php">Ver catalogo</a></center>
+</div>

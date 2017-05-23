@@ -1,0 +1,20 @@
+.empty {
+    padding: 15px 0;
+    font-size: 25px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+table{
+  width:100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+    border: 3px solid #d6d6c2;
+}
+
+th, td{
+  padding: 15px;
+  text-align: center;
+}

@@ -31,7 +31,7 @@
                 <div class="logo"><i>Modificar disco<i></i></div>
                 <!-- Main Form -->
 
-                    <form id="login-form" action="modify_disc.php" class="text-left" method="post">
+                    <form id="login-form" action="modify_disc.php?cd=<?php echo $_GET['cd']?>" class="text-left" method="post">
                         <div class="main-login-form">
                             <div class="login-group">
                                 <div class="form-group">

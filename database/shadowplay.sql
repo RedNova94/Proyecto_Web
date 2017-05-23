@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2017 at 10:49 PM
+-- Generation Time: May 23, 2017 at 07:38 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -65,11 +65,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`username`, `password`, `email`, `admin`) VALUES
 ('gerry', 'chalo123', 'gerry_hd@live.com.mx', 1),
-('janedoe', 'tf2', 'tf2@hotmail.com', 0),
-('johndoe', 'password', 'example@gmail.com', 0),
-('misu', 'ojovioleta27', 'suheilypergola@gmail.com', 1),
-('nova', 'dragondance', 'rnvasquez94@gmail.com', 1),
-('usuario', 'usuario', 'email@internet.com', 0);
+('kirby', 'kirby', 'rtd@hotmail.com', 0),
+('misu', 'ojovioleta27', 'nomeacuerdo@gmail.com', 1),
+('nova', 'dragondance', 'rnvasquez94@gmail.com', 1);
 
 --
 -- Indexes for dumped tables

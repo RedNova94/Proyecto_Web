@@ -23,7 +23,11 @@ $resultado = mysqli_query($conexion, $sql_query);
 while ($row = mysqli_fetch_array($resultado)){ ?>
     <div class="cd">
       <div class="cd-content">
-        <h3><?php echo $row['product_name'] ?></h3>
+        <h3><?php echo $row['product_name']; if(isset($_SESSION["shadowplay_islog"])) {
+          ?> <a id="editlink" href="modify.php?cd=<?php echo $row['product_id'] ?>">
+            <img src="images/pencil.png" id="edit" /></a>
+        <?php } ?>
+         </h3>
         <hr />
         <img src="<?php echo $row['product_image'] ?>" class="art"/>
         <div class="about">
@@ -36,6 +40,7 @@ while ($row = mysqli_fetch_array($resultado)){ ?>
         <?php
         if(isset($_SESSION["shadowplay_islog"])) { ?>
         <a target="rightframe" onclick="window.location ='shopping_cart.php?id=<?php echo $row['product_id'];?>'"><button type="submit"><i>Comprar</i></button></a></td>
+
         <?php } ?>
         </div>
       </div>

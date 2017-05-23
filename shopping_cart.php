@@ -87,7 +87,7 @@ if(isset($_GET['id'])){
     }
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8"/>
     <title>Carrito de Compras</title>
@@ -113,7 +113,7 @@ if(isset($_GET['id'])){
                     <span>Precio: $<?php echo $datos[$i]['Precio'];?></span><br>
                     <span>Cantidad: <?php echo $datos[$i]['Cantidad'];?></span><br>
                     <span>Subtotal: $<?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
-                    
+                    <button onclick="window.location='shopping_cart.php<?php unset($datos[$i]['Id'])?>'">Eliminar</button>
                 </center>
             </div>
             <?php
@@ -126,4 +126,17 @@ if(isset($_GET['id'])){
     echo '<center><h2>Total: '.$total.'</h2></center>';
 
     ?>
-    <center><a href="disc_catalog.php">Ver catalogo</a></center>
+
+    <center>
+    <button onclick="window.location='shopping_cart.php<?php
+    $_SESSION['carrito']="";
+
+    ?>'">Eliminar Todo</button>
+            <br><a href="disc_catalog.php">Ver catalogo</a><br><br>
+        <FORM>
+
+            <input  type="button"
+                   onclick='alert("Su compra ha sido procesada, gracias por su preferencia")' value="Comprar" />
+        </FORM>
+    </center>
+</section></body></html>

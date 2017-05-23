@@ -32,9 +32,20 @@ if(isset($_POST["submit"])) {
     }
 }
 // Check if file already exists
-if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
+if (file_exists($tmp_name)) {
+/*    echo "<script>
+                alert('File already exists');
+                window.location='upload_avatar.php';
+              </script>";*/
+    if ($handle = opendir('profile_pictures/')) {
+        if (file_exists('profile_pictures/'.$name.'.png')) {
+            unlink('profile_pictures/'.$name.'.png');
+        } else if (file_exists('profile_pictures/'.$name.'.jpg')) {
+            unlink('profile_pictures/'.$name.'.jpg');
+        }
+    }
+    closedir($handle);
+    $uploadOk = 1;
 }
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 500000) {
@@ -68,7 +79,7 @@ if ($uploadOk == 0) {;
       </script>";
     } else {
         echo "<script> 
-                alert('There was an error uploading your fileS');
+                alert('There was an error uploading your files');
                 window.location='upload_avatar.php';
               </script>";
     }

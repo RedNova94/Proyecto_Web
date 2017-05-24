@@ -41,9 +41,19 @@
                         <div>
                             <p></p>
                         </div>
-                            <button type="submit" onclick="<?php setcookie("cd_id", $_GET['cd'], time() + (86400 * 30), "/")?>"><i>Guardar cambios</i></button>
+                            <form action="modify_disc.php" method="post">
+                                <input type="hidden" value="<?php echo $row['product_id'] ?>" id="cd_id" name="cd_id">
+                                <input type="submit" value="Guardar Cambios">
+                            </form>
+                            <br>
+                            <br>
+                            <br>
                         </div>
                     </form>
+                <form action="delet_disc.php" method="post">
+                    <input type="hidden" value="<?php echo $row['product_id'] ?>" id="cd_id" name="cd_id">
+                    <input type="submit" value="Eliminar Disco">
+                </form>
                 </div>
             </div>
         </td>
@@ -69,6 +79,8 @@
       </div>
     </div>
   </div>
+<br>
+<center><button onclick="window.location='disc_catalog.php'">Regresar</button></center>
 
 </div>
 

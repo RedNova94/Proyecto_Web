@@ -7,7 +7,7 @@
  */
 
 $price = $_POST['add_precio'];
-$id = $_COOKIE['cd_id'];
+$id = $_POST['cd_id'];
 
 if($_POST['add_precio']=="") {
     echo "<script>
@@ -21,7 +21,6 @@ if($_POST['add_precio']=="") {
 
     mysqli_query($conexion, $sql_query);
     mysqli_close($conexion);
-    setcookie("cd_id", "", (time() - 3600), "/");
 
     header("location: disc_catalog.php");
 

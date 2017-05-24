@@ -153,5 +153,5 @@ if(isset($_POST["cd_id"])){
     ?> </table> <?php
     echo '<center class="empty"><h2>Total: '.$total.'</h2></center>';
     ?>
-  <center><a href="disc_catalog.php">Volver al catálogo</a></center>
+  <center><a href="disc_catalog.php"><button>Volver al catálogo</button></a></center>
 </div>

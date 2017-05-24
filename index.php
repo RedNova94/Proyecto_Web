@@ -13,33 +13,13 @@ if(isset($_SESSION["shadowplay_islog"])) {
 
 <div class="box">
     <div class="box-content">
-        <h1 class="tag-title">Heading</h1>
+        <h1 class="tag-title">SHADOWPLAY</h1>
         <hr />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
+        <p>¡Bienvenido a la tienda Shadowplay! Aquí podrás encontrar discos de todo tipo de bandas, para todos los gustos.
+            La tienda funciona como un intermediario, ordenando los discos al proveedor para después enviarlos.
+            Pasa al Catálogo para poder observar los productos disponibles.
+        </p>
         <br />
-        <a href="ppc.html" class="btn btn-block btn-primary">Learn more</a>
-    </div>
-</div>
-
-
-<div class="box">
-    <div class="box-content">
-        <h1 class="tag-title">Heading</h1>
-        <hr />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
-        <br />
-        <a href="ppc.html" class="btn btn-block btn-primary">Learn more</a>
-    </div>
-</div>
-
-
-<div class="box">
-    <div class="box-content">
-        <h1 class="tag-title">Heading</h1>
-        <hr />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
-        <br />
-        <a href="ppc.html" class="btn btn-block btn-primary">Learn more</a>
     </div>
 </div>
 

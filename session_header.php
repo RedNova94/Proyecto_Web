@@ -53,7 +53,7 @@
             </a>
         </li>
         <li>
-            <a href="end_session.php" title = 'Cerrar Sesión'>
+            <a href="functions/end_session.php" title = 'Cerrar Sesión'>
                 <span>Cerrar Sesión</span>
             </a>
         </li>

@@ -10,10 +10,10 @@ if($_POST['add_titulo']=="" || $_POST['add_artista']== "" || $_POST['add_imagen'
 
     echo "<script>
     alert('Por favor llena todos los campos');
-    window.location.href='add_product.php';
+    window.location.href='../add_product.php';
     </script>";
 } else {
-    include ("database/database_connection.php");
+    include("database/database_connection.php");
     $sql_query = "INSERT INTO inventory (product_name, product_artist, product_image, product_price) 
                   VALUES ('" . $_POST["add_titulo"] . "', '" . $_POST["add_artista"] . "', '" . $_POST["add_imagen"] . "', '" . $_POST["add_precio"] . "')";
 

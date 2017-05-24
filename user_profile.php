@@ -35,7 +35,7 @@ include_once('session_header.php');
                 <?php echo $UserEmail; ?>
             </p>
             <p>
-              <form action="upload.php" method="post" enctype="multipart/form-data">
+              <form action="functions/upload.php" method="post" enctype="multipart/form-data">
 
                   <label class="button" for="fileToUpload">Cambiar imagen...<input style="width:0px" type="file" name="fileToUpload" id="fileToUpload"></label>
                   <input class="button" id="submit" type="submit" value="Subir" name="submit" style="display:none;">

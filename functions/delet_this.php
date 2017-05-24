@@ -6,7 +6,7 @@
  * Time: 9:36 AM
  */
 
-include ('database/database_connection.php');
+include('database/database_connection.php');
 $id = $_POST['id'];
 $sql_query = "DELETE FROM users WHERE username='$id' ";
 

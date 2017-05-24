@@ -31,7 +31,7 @@
                 <div class="logo"><i>Modificar disco<i></i></div>
                 <!-- Main Form -->
 
-                    <form id="login-form" action="modify_disc.php" class="text-left" method="post">
+                    <form id="login-form" action="functions/modify_disc.php" class="text-left" method="post">
                         <div class="main-login-form">
                             <div class="login-group">
                                 <div class="form-group">
@@ -41,7 +41,7 @@
                         <div>
                             <p></p>
                         </div>
-                            <form action="modify_disc.php" method="post">
+                            <form action="functions/modify_disc.php" method="post">
                                 <input type="hidden" value="<?php echo $row['product_id'] ?>" id="cd_id" name="cd_id">
                                 <input type="submit" value="Guardar Cambios">
                             </form>
@@ -50,7 +50,7 @@
                             <br>
                         </div>
                     </form>
-                <form action="delet_disc.php" method="post">
+                <form action="functions/delet_disc.php" method="post">
                     <input type="hidden" value="<?php echo $row['product_id'] ?>" id="cd_id" name="cd_id">
                     <input type="submit" value="Eliminar Disco">
                 </form>

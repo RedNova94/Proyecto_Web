@@ -26,7 +26,7 @@ if(isset($_POST["submit"])) {
     } else {
         echo "<script>
                 alert('File is not an image.');
-                window.location='user_profile.php';
+                window.location='../user_profile.php';
               </script>";
         $uploadOk = 0;
     }
@@ -35,7 +35,7 @@ if(isset($_POST["submit"])) {
 if ($_FILES["fileToUpload"]["size"] > 500000) {
     echo "<script>
                 alert('La imagen es muy grande.');
-                window.location='user_profile.php';
+                window.location='../user_profile.php';
               </script>";
     $uploadOk = 0;
 }
@@ -43,7 +43,7 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 if($imageExt != "jpg" && $imageExt != "png") {
     echo "<script>
                 alert('Solo se permiten .jpg y .png');
-                window.location='user_profile.php';
+                window.location='../user_profile.php';
               </script>";
     $uploadOk = 0;
 }
@@ -51,7 +51,7 @@ if($imageExt != "jpg" && $imageExt != "png") {
 if ($uploadOk == 0) {;
     echo "<script>
                 alert('Hubo un error al subir la imagen.');
-                window.location='user_profile.php';
+                window.location='../user_profile.php';
               </script>";
 // if everything is ok, try to upload file
 } else {
@@ -73,12 +73,12 @@ if ($uploadOk == 0) {;
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
         echo "<script>
         alert('Imagen Guardada');
-        window.location='user_profile.php';
+        window.location='../user_profile.php';
             </script>";
     } else {
         echo "<script>
                 alert('Hubo un error al subir la imagen.');
-                window.location='user_profile.php';
+                window.location='../user_profile.php';
               </script>";
     }
 }
